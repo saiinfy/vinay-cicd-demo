@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - mkdir -p html
+      - echo "<h1>Demo App - Vulnerable Build</h1>" > html/index.html
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/**/*
+    - html/**/*
+  discard-paths: no
